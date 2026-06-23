@@ -1,6 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .card {
     height: 400px;
     width: 400px;
     background-color: black;
+    color: white !important ;
+}
+
+.nav {
+    display: flex;
+    z-index: 100;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    padding: 40px 20px;
+    margin-bottom: 80px;
+    background: rgb(127, 53, 246);
     color: white;
+}
+
+.navItems {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navItems a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+}
+
+.home {
+    background: rgb(255, 150, 52);
+    color: white;
+}
+
+.services {
+    background: rgb(130, 58, 246);
+    color: white;
+}
+
+.contact {
+    background: rgb(255, 79, 199);
+    color: white;
+}
+
+.about {
+    background: rgb(64, 61, 255);
+    color: white;
+}
+
+.container {
+  transition: all .3s ease-in-out;
+  max-width: 1220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  margin: auto;
+}
+
+.container h1{
+     text-transform:capitalize;
 }
