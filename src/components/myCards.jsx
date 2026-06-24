@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Box = ({ myProduct }) => {
   return (
@@ -10,19 +10,21 @@ const Box = ({ myProduct }) => {
   );
 };
 
-const MyCards = ({ products, heading = "heading" }) => {
-  const [pageData, setPageData] = useState(products[0]);
+const MyCards = ({ heading = "heading" }) => {
+  const [pageData, setPageData] = useState({
+    id: 1,
+    name: "Laptop",
+    price: 50000,
+    category: "Electronics",
+  });
+
   console.log(setPageData, typeof setPageData, "setPageData");
 
-  useEffect(() => {
-    console.log(pageData, "pageDatasda");
-  }, [pageData]);
-
   const handleStateChange = (data) => {
+    alert(data.heading)
     setPageData({ ...data });
   };
 
-  console.log("hello")
   return (
     <>
       <nav className="nav">
